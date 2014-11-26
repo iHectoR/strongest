@@ -1,0 +1,130 @@
+body{
+	color: #211f1f;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+b{
+	font-weight: 700;
+}
+.container{
+	width: 1310px;
+	padding: 0 35px;
+	margin: 0 auto;
+	position: relative;
+
+}
+header{
+	height: 110px;
+	background: #141A1D;
+}
+.logo{
+	display: block;
+	float: left;
+	width: 438px;
+	height: 110px;
+	background: url("../img/logo.png");
+}
+.search{
+	float: right;
+	width: 110px;
+	height: 110px;
+	background: url("../img/search.png") 50% 50% no-repeat;
+}
+.menu{
+	float: right;
+}
+.menu li{
+	float: left;
+}
+.menu li a{
+	font-size: 24px;
+	line-height: 110px;
+	color: #637076;
+	padding-right: 14px;
+	padding-left: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: color .2s ease;
+	-moz-transition: color .2s ease;
+	-ms-transition: color .2s ease;
+	-o-transition: color .2s ease;
+	transition: color .2s ease;
+}
+.menu li a:hover{
+	color: #ffffff;
+}
+.slider{
+	height: 700px;
+	background: url("../img/slide1.jpg");
+	padding-top: 200px;
+}
+.slider .container{
+	height: 100%;
+}
+h2{
+	color: #ffffff;
+	font: 900 92px Lato, Arial, sans-serif;
+	text-transform: uppercase;
+}
+.prev, .next{
+	width: 69px;
+	height: 69px;
+	background-color: rgba(255, 255, 255, .45);
+	float: left;
+	position: absolute;
+	bottom: 47px;
+}
+.prev{
+	left: 40px;
+	/*margin-right: 1px;*/
+}
+.next{
+	left: 110px;
+}
+.natural-stone{
+	padding-top: 65px;
+	padding-bottom: 65px;
+	background-color: #FF5722;
+}
+.question{
+	color: #ffffff;
+	font: 700 38px Lato, Arial, sans-serif;
+	text-transform: uppercase;
+	margin-right: 300px;
+}
+.click-button{
+	padding: 28px 50px;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font: 28px Lato, Arial, sans-serif;
+	float: right;
+}
+.click-button:hover{
+	background-color: #ffffff;
+	color: #FF5722;
+	-webkit-transition: color .2s ease, background-color .2s ease;
+	-moz-transition: color .2s ease, background-color .2s ease;
+	-ms-transition: color .2s ease, background-color .2s ease;
+	-o-transition: color .2s ease, background-color .2s ease;
+	transition: color .2s ease, background-color .2s ease;
+}
+
+.expectetion{
+	background: url("../img/pattern.jpg");
+	padding-top: 126px;
+}
+.main-label{
+	font: 300 72px 'Open Sans', Arial, sans-serif;
+	color: #263238;
+	margin-bottom: 46px;
+	text-transform: uppercase;
+}
+.description{
+	color: #645f5f;
+	font: 300 22px 'Open Sans', Arial, sans-serif;
+	padding-right: 250px;
+	margin-bottom: 84px;
+}
