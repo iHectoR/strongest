@@ -60,6 +60,9 @@
 .ba-width-1-2{
 	width: 50%;
 }
+.ba-width-2-3{
+	width: 66.666666%;
+}
 .ba-width-1-3{
 	width: 33.333333%;
 }
@@ -99,6 +102,10 @@
 
 .ba-grid-width-1-2 > * {
 	width: 50%;
+}
+.ba-grid-width-2-3 > * {
+	width: 66.666666%;
+
 }
 .ba-grid-width-1-3 > * {
 	width: 33,333333%;
@@ -223,29 +230,12 @@ $breakpoint-medium: 768px; more than 768px
 $breakpoint-large: 960px; more than 960px
 $breakpoint-xlarge: 1220px; more than 1220px
 */
-@media (max-width: 479px){
-	.ba-grid > [class*='ba-width-small'] + [class*='ba-width-small']{
-		margin-top: 20px;
-	}
-}
-@media (max-width: 767px){
-	.ba-grid > [class*='ba-width-medium'] + [class*='ba-width-medium']{
-		margin-top: 20px;
-	}
-}
-@media (max-width: 959px){
-	.ba-grid > [class*='ba-width-large'] + [class*='ba-width-large']{
-		margin-top: 20px;
-	}
-}
-@media (max-width: 1219px){
-	.ba-grid > [class*='ba-width-xlarge'] + [class*='ba-width-xlarge']{
-		margin-top: 20px;
-	}
-}
 @media (min-width: 480px){
 	.ba-width-small-1-1{
 		width: 100%;
+	}
+	.ba-width-small-2-3{
+		width: 66.666666%;
 	}
 	.ba-width-small-1-2{
 		width: 50%;
@@ -267,6 +257,9 @@ $breakpoint-xlarge: 1220px; more than 1220px
 	.ba-width-medium-1-1{
 		width: 100%;
 	}
+	.ba-width-medium-2-3{
+		width: 66.666666%;
+	}
 	.ba-width-medium-1-2{
 		width: 50%;
 	}
@@ -286,6 +279,9 @@ $breakpoint-xlarge: 1220px; more than 1220px
 @media (min-width: 960px){
 	.ba-width-large-1-1{
 		width: 100%;
+	}
+	.ba-width-large-2-3{
+		width: 66.666666%;
 	}
 	.ba-width-large-1-2{
 		width: 50%;
@@ -307,6 +303,9 @@ $breakpoint-xlarge: 1220px; more than 1220px
 	.ba-width-xlarge-1-1{
 		width: 100%;
 	}
+	.ba-width-xlarge-2-3{
+		width: 66.666666%;
+	}
 	.ba-width-xlarge-1-2{
 		width: 50%;
 	}
@@ -321,5 +320,37 @@ $breakpoint-xlarge: 1220px; more than 1220px
 	}
 	.ba-width-xlarge-1-6{
 		width: 16.666666%;
+	}
+}
+@media (min-width: 480px){
+	.ba-float-left-small{
+		float: left;
+	}
+	.ba-float-right-small{
+		float: right;
+	}
+}
+@media (min-width: 768px){
+	.ba-float-left-medium{
+		float: left;
+	}
+	.ba-float-right-medium{
+		float: right;
+	}
+}
+@media (min-width: 960px){
+	.ba-float-left-large{
+		float: left;
+	}
+	.ba-float-right-large{
+		float: right;
+	}
+}
+@media (min-width: 1220px){
+	.ba-float-left-xlarge{
+		float: left;
+	}
+	.ba-float-right-xlarge{
+		float: right;
 	}
 }

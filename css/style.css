@@ -8,7 +8,7 @@ b{
 	font-weight: 700;
 }
 .container{
-	width: 1310px;
+	width: 1240px;
 	padding: 0 35px;
 	margin: 0 auto;
 	position: relative;
@@ -115,6 +115,7 @@ h2{
 .expectetion{
 	background: url("../img/pattern.jpg");
 	padding-top: 126px;
+	padding-bottom: 108px;
 }
 .main-label{
 	font: 300 72px 'Open Sans', Arial, sans-serif;
@@ -127,4 +128,39 @@ h2{
 	font: 300 22px 'Open Sans', Arial, sans-serif;
 	padding-right: 250px;
 	margin-bottom: 84px;
+}
+.mat-name{
+	font: 800 30px "Open Sans", Arial, sans-serif;
+	color: #03a9f4;
+	text-decoration: none;
+	margin-top: 50px;
+	display: block;
+}
+.sub-caption{
+	font: 700 18px "Open Sans", Arial, sans-serif;
+	color: #211f1f;
+	margin: 5px 0;
+}
+.excrept{
+	font-weight: 300;
+}
+.more-button{
+	display: inline-block;
+	font-size: 15px;
+	line-height: 1;
+	padding: 17px 25px;
+	margin-top: 30px;
+	background-color: #FF5722;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.video{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: url("../img/rocks.jpg");
+}
+.video .main-label{
+	color: #FF5722;
+	margin-bottom: 77px;
 }
