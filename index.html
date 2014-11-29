@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400italic,400,300,800,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400italic,400,300,800,700'
+		  rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/layout.css"/>
@@ -17,6 +18,11 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script>jQuery(function ($) {
+		$('.content-slider').cycle();
+	})</script>
 </head>
 <body>
 <header class="cf">
@@ -35,13 +41,29 @@
 		</ul>
 	</nav>
 </header>
-<section class="slider">
-		<div class="slide1" style="background: url('img/slide1.jpg')"><div class="container"><h2>Beautify your home with handcrafted stone</h2></div></div>
-		<div class="slide2" style="background: url('img/slide2.jpg'); display:none"><div class="container"><h2>We love Your design ideas in stone</h2></div></div>
-		<div class="slide3" style="background: url('img/slide3.jpg'); display:none"><div class="container"><h2>The look and feel of our products are naturally superior</h2></div></div>
-		<div class="container"><a class="prev" href="#"></a>
-		<a class="next" href="#"></a></div>
+<section class="top-slider">
+	<div class="content-slider">
+		<div class="slide slide1" style="background-image: url('img/slide1.jpg')">
+			<div class="container">
+				<h2>Beautify your home with handcrafted stone</h2>
+			</div>
+		</div>
+		<div class="slide slide2" style="background-image: url('img/slide2.jpg')">
+			<div class="container">
+				<h2>We love Your design ideas in stone</h2>
+			</div>
+		</div>
+		<div class="slide slide3" style="background-image: url('img/slide3.jpg')">
+			<div class="container">
+				<h2>The look and feel of our products are naturally superior</h2>
+			</div>
+		</div>
 	</div>
+	<div class="container">
+		<a class="prev" href="#"></a>
+		<a class="next" href="#"></a>
+	</div>
+
 </section>
 <section class="natural-stone">
 	<div class="container">
@@ -361,6 +383,7 @@
 					<div class="percent">79%</div>
 				</div>
 				<h4 class="header-4th">Vestibulum iaculis lacinia?</h4>
+
 				<p class="large-excerpt">Proin dictum elementum veliteuismod conseq.</p>
 				<a class="more-button" href="#">View more</a>
 			</div>
@@ -370,23 +393,31 @@
 <section class="service">
 	<div class="container cf">
 		<h3 class="medium-label ba-vertical-align-middle">Cities we service</h3>
+
 		<p class="phone ba-vertical-align-middle">call now +1 959 603 6035</p>
 	</div>
 </section>
 <section class="contact-us">
 	<div class="container">
 		<h3 class="main-label">Feel free to <b>contact us</b></h3>
-		<div class="socials"><a href="#" class="google-plus ba-border-circle"></a><a href="#" class="twitter ba-border-circle"></a><a href="#" class="facebook ba-border-circle"></a><a href="#" class="pinterest ba-border-circle"></a><a href="#" class="linkedin ba-border-circle"></a></div>
+
+		<div class="socials"><a href="#" class="google-plus ba-border-circle"></a><a href="#"
+																					 class="twitter ba-border-circle"></a><a
+				href="#" class="facebook ba-border-circle"></a><a href="#" class="pinterest ba-border-circle"></a><a
+				href="#" class="linkedin ba-border-circle"></a></div>
 		<form action="#">
-			<div class="ba-grid"><div class="ba-width-1-2"><input class="f-name" type="text" placeholder="First Name"/></div>
-			<div class="ba-width-1-2"><input class="l-name" type="text" placeholder="Last Name"/></div></div>
+			<div class="ba-grid">
+				<div class="ba-width-1-2"><input class="f-name" type="text" placeholder="First Name"/></div>
+				<div class="ba-width-1-2"><input class="l-name" type="text" placeholder="Last Name"/></div>
+			</div>
 			<textarea class="msg" placeholder="Message"></textarea>
 			<button class="send" type="submit">Send your message</button>
 		</form>
 	</div>
 </section>
 <section class="copyright">
-	<p>Designed by <a href="http://templatemonster.com" class="site">Template<span class="red-word">Monster</span>.com</a> © 2015</p>
+	<p>Designed by <a href="http://templatemonster.com" class="site">Template<span
+			class="red-word">Monster</span>.com</a> © 2015</p>
 </section>
 <section class="map"></section>
 </body>
