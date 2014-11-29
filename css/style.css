@@ -62,10 +62,15 @@ header{
 }
 .slider{
 	height: 700px;
-	background: url("../img/slide1.jpg") no-repeat 100% 70%;
+	/*background: url("../img/slide1.jpg") no-repeat 100% 70%;*/
 	-webkit-background-size: cover;
 	background-size: cover;
+	/*padding-top: 200px;*/
+}
+.slider [class*="slide"]{
 	padding-top: 200px;
+	height: 100%;
+
 }
 .slider .container{
 	height: 100%;
@@ -78,7 +83,8 @@ h2{
 .prev, .next{
 	width: 69px;
 	height: 69px;
-	background-color: rgba(255, 255, 255, .45);
+	background-color: #fff;
+	opacity: .45;
 	float: left;
 	position: absolute;
 	bottom: 47px;
@@ -89,6 +95,9 @@ h2{
 }
 .next{
 	left: 110px;
+}
+.prev:hover, .next:hover{
+	opacity: .85;
 }
 .natural-stone{
 	padding-top: 65px;
@@ -504,6 +513,7 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	border: 1px solid #263238;
 	border-radius: 3px;
 	background-color: transparent;
+	font-size: 18px;
 }
 .msg{
 	margin-top: 14px;
