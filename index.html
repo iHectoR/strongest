@@ -42,7 +42,13 @@
 	</nav>
 </header>
 <section class="top-slider">
-	<div class="content-slider">
+	<div class="content-slider cycle-slideshow"
+		data-cycle-fx="scrollHorz"
+		data-cycle-timeout="5000"
+		data-cycle-slides="> div"
+		data-cycle-prev=".prev"
+		data-cycle-next=".next"
+			>
 		<div class="slide slide1" style="background-image: url('img/slide1.jpg')">
 			<div class="container">
 				<h2>Beautify your home with handcrafted stone</h2>
@@ -59,7 +65,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container slider-controls">
 		<a class="prev" href="#"></a>
 		<a class="next" href="#"></a>
 	</div>
