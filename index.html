@@ -20,15 +20,18 @@
 	<![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
-	<script>jQuery(function ($) {
-		$('.content-slider').cycle();
-	})</script>
 </head>
 <body>
 <header class="cf">
-	<a class="logo" href="#"></a>
+	<a class="logo ba-vertical-align" href="#">
+		<span class="square"><i class="fa fa-tint"></i></span>
+		<span class="text ba-vertical-align-middle">
+			<span class="small">Stone products</span>
+			<span class="big">Strongest</span>
+		</span>
+	</a>
 
-	<div class="search"></div>
+	<div class="search"><i class="fa fa-search"></i></div>
 	<nav class="menu">
 		<ul>
 			<li><a href="#">Home</a></li>
@@ -51,23 +54,23 @@
 			>
 		<div class="slide slide1" style="background-image: url('img/slide1.jpg')">
 			<div class="container">
-				<h2>Beautify your home with handcrafted stone</h2>
+				<h2 class="slide-title">Beautify your home with handcrafted stone</h2>
 			</div>
 		</div>
 		<div class="slide slide2" style="background-image: url('img/slide2.jpg')">
 			<div class="container">
-				<h2>We love Your design ideas in stone</h2>
+				<h2 class="slide-title">We love Your design ideas in stone</h2>
 			</div>
 		</div>
 		<div class="slide slide3" style="background-image: url('img/slide3.jpg')">
 			<div class="container">
-				<h2>The look and feel of our products are naturally superior</h2>
+				<h2 class="slide-title">The look and feel of our products are naturally superior</h2>
 			</div>
 		</div>
 	</div>
 	<div class="container slider-controls">
-		<a class="prev" href="#"></a>
-		<a class="next" href="#"></a>
+		<a class="prev" href="#"><i class="fa fa-angle-left"></i></a>
+		<a class="next" href="#"><i class="fa fa-angle-right"></i></a>
 	</div>
 
 </section>
@@ -407,10 +410,13 @@
 	<div class="container">
 		<h3 class="main-label">Feel free to <b>contact us</b></h3>
 
-		<div class="socials"><a href="#" class="google-plus ba-border-circle"></a><a href="#"
-																					 class="twitter ba-border-circle"></a><a
-				href="#" class="facebook ba-border-circle"></a><a href="#" class="pinterest ba-border-circle"></a><a
-				href="#" class="linkedin ba-border-circle"></a></div>
+		<div class="socials">
+			<a href="#" class="google-plus ba-border-circle"><i class="fa fa-google-plus"></i></a>
+			<a href="#" class="twitter ba-border-circle"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="facebook ba-border-circle"><i class="fa fa-facebook"></i></a>
+			<a href="#" class="pinterest ba-border-circle"><i class="fa fa-pinterest"></i></a>
+			<a href="#" class="linkedin ba-border-circle"><i class="fa fa-linkedin"></i></a>
+		</div>
 		<form action="#">
 			<div class="ba-grid">
 				<div class="ba-width-1-2"><input class="f-name" type="text" placeholder="First Name"/></div>
@@ -425,6 +431,8 @@
 	<p>Designed by <a href="http://templatemonster.com" class="site">Template<span
 			class="red-word">Monster</span>.com</a> © 2015</p>
 </section>
-<section class="map"></section>
+<section class="map">
+	<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zwVc-MfqXC48.kYYk6PxYquec" width="100%" height="500"></iframe>
+</section>
 </body>
 </html>
