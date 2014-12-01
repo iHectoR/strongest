@@ -20,6 +20,7 @@
 	<![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/function.js"></script>
 </head>
 <body>
 <header class="cf">
@@ -31,7 +32,14 @@
 		</span>
 	</a>
 
-	<div class="search"><i class="fa fa-search"></i></div>
+	<div class="menu-toggle"><i class="fa fa-bars"></i></div>
+	<div class="search">
+		<div class="form-wrap"><form method="post" class="search-form">
+			<input class="search-field" type="text" placeholder="Search..."/>
+		</form></div>
+		<button class="search-button"><i class="fa fa-search"></i></button>
+		<i class="fa fa-search search-icon"></i>
+	</div>
 	<nav class="menu">
 		<ul>
 			<li><a href="#">Home</a></li>
