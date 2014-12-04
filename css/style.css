@@ -113,7 +113,7 @@ header{
 	position: absolute;
 	bottom: 100%;
 	right: 0;
-	z-index: -1;
+	cursor: pointer;
 	outline: none;
 }
 .search-open .form-wrap{
@@ -131,7 +131,8 @@ header{
 	width: 40px;
 	font-size: 30px;
 	text-align: center;
-	position: relative;
+	position: absolute;
+	right: 80px;
 	z-index: 999;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -140,6 +141,7 @@ header{
 }
 .menu{
 	float: right;
+	margin-right: 110px;
 }
 .menu>ul>li{
 	float: left;
@@ -236,6 +238,11 @@ header{
 	position: absolute;
 	bottom: 47px;
 	z-index: 101;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	-ms-transition: opacity .2s ease;
+	-o-transition: opacity .2s ease;
+	transition: opacity .2s ease;
 }
 .prev{
 	left: 40px;
@@ -304,6 +311,15 @@ header{
 	text-decoration: none;
 	margin-top: 35px;
 	display: block;
+	-webkit-transition: color .2s ease;
+	-moz-transition: color .2s ease;
+	-ms-transition: color .2s ease;
+	-o-transition: color .2s ease;
+	transition: color .2s ease;
+}
+a.title:hover{
+	color: #FF5722;
+
 }
 .sub-caption{
 	font: 700 18px "Open Sans", Arial, sans-serif;
@@ -323,6 +339,15 @@ header{
 	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
+	-webkit-transition: background-color .2s ease;
+	-moz-transition: background-color .2s ease;
+	-ms-transition: background-color .2s ease;
+	-o-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+}
+.more-button:hover{
+	background-color: #03A9F4;
+
 }
 .video{
 	padding-top: 65px;
@@ -411,6 +436,7 @@ header{
 }
 .customers .ba-grid{
 	margin-bottom: 90px;
+	width: 100%;
 }
 .customers .main-label{
 	color: #ffffff;
@@ -463,6 +489,11 @@ header{
 }
 .prev-reply, .next-reply{
 	text-align: center;
+	-webkit-transition: color .2s ease;
+	-moz-transition: color .2s ease;
+	-ms-transition: color .2s ease;
+	-o-transition: color .2s ease;
+	transition: color .2s ease;
 }
 .gallery{
 	padding-top: 62px;
@@ -483,6 +514,9 @@ header{
 }
 .gallery a img{
 	display: block;
+	width: 100%;
+}
+.port-100p{
 	width: 100%;
 }
 .work{
@@ -514,6 +548,14 @@ header{
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
+	-webkit-transition: background-color .2s ease;
+	-moz-transition: background-color .2s ease;
+	-ms-transition: background-color .2s ease;
+	-o-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+}
+.portfolio-controls span:hover{
+	background-color: #637076;
 }
 .portfolio-controls span + span{
 	margin-left: 4px;
@@ -601,6 +643,8 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 }
 .bar .color{
 	padding: 10px 25px;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .bar .percent{
 	padding-top: 10px;
@@ -694,6 +738,11 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	color: #263238;
 	font-size: 30px;
 	line-height: 60px;
+	-webkit-transition: color .2s ease, background-color .2s ease;
+	-moz-transition: color .2s ease, background-color .2s ease;
+	-ms-transition: color .2s ease, background-color .2s ease;
+	-o-transition: color .2s ease, background-color .2s ease;
+	transition: color .2s ease, background-color .2s ease;
 }
 .socials a:hover{
 	background-color: #263238;
@@ -744,6 +793,14 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	border:none;
 	background-color: #FF5722;
 	cursor: pointer;
+	-webkit-transition: background-color .2s ease;
+	-moz-transition: background-color .2s ease;
+	-ms-transition: background-color .2s ease;
+	-o-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+}
+.send:hover{
+	background-color: #03A9F4;
 }
 .copyright{
 	padding-top: 80px;
@@ -777,6 +834,24 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 .map iframe{
 	width: 100%;
 }
+.back-to-top{
+	/*width: 50px;*/
+	/*height: 50px;*/
+	position:fixed;
+	bottom:75px;
+	right:40px;
+	display:none;
+	color: #535353;
+	font-size: 37px;
+	-webkit-transition: color .2s ease;
+	-moz-transition: color .2s ease;
+	-ms-transition: color .2s ease;
+	-o-transition: color .2s ease;
+	transition: color .2s ease;
+}
+.back-to-top:hover{
+	color: #FF5722;
+}
 @media (max-width:1550px) {
 	.logo, .search, .search-button, .search-icon, .menu>ul>li{
 		line-height: 90px;
@@ -791,6 +866,9 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	}
 	.logo .text .small{
 		font-size: 14px;
+	}
+	.menu{
+		margin-right: 90px;
 	}
 	.menu>ul>li{
 		font-size: 20px;
@@ -822,6 +900,9 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	}
 	.logo .text .small{
 		font-size: 14px;
+	}
+	.menu{
+		margin-right: 80px;
 	}
 	.menu>ul>li{
 		font-size: 18px;
@@ -873,7 +954,7 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	}
 	.customers{
 		padding-top: 40px;
-		padding-bottom: 115px;
+		/*padding-bottom: 115px;*/
 	}
 	.gallery{
 		padding-top: 40px;
@@ -883,8 +964,20 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 		padding-bottom: 50px;
 	}
 	.service{
+		text-align: center;
+	}
+	.service{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.medium-label, .phone{
+		float: none;
+	}
+	.medium-label{
+		font-size: 50px;
+	}
+	.phone{
 		padding-top: 0;
-		padding-bottom: 0;
 	}
 	.contact-us{
 		padding-top: 50px;
@@ -944,6 +1037,7 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 		visibility: hidden;
 		opacity: 0;
 		height: auto;
+		margin-right: 0;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -1036,7 +1130,7 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 		margin-bottom: 20px;
 	}
 	.customers{
-		padding-bottom: 90px;
+		/*padding-bottom: 90px;*/
 	}
 	.reply+.reply{
 		margin-top: 70px;
@@ -1069,22 +1163,6 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 	.work+.work{
 		margin-top: 20px;
 	}
-	.service{
-		text-align: center;
-	}
-	.service{
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-	.medium-label, .phone{
-		float: none;
-	}
-	.medium-label{
-		font-size: 50px;
-	}
-	.phone{
-		padding-top: 0;
-	}
 	.spoilers{
 		margin-bottom: 30px;
 	}
@@ -1107,5 +1185,9 @@ input:checked + .spoiler + input + .spoiler>.spoiler-title{
 @media (max-width: 480px) {
 	.logo .text {
 	display: none;
-}
+	}
+	.send{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }

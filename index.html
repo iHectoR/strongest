@@ -20,6 +20,7 @@
 	<![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.js"></script>
 	<script src="js/function.js"></script>
 </head>
 <body>
@@ -31,7 +32,7 @@
 			<span class="big">Strongest</span>
 		</span>
 	</a>
-	<i class="fa fa-search search-icon"></i>
+	<!--<i class="fa fa-search search-icon"></i>-->
 
 	<div class="menu-toggle"><i class="fa fa-bars"></i></div>
 	<div class="search cf">
@@ -233,12 +234,52 @@
 	<div class="container">
 		<h3 class="main-label">What our <b>customers</b> say</h3>
 
-		<div class='cycle-slideshow'
-			 data-cycle-fx="scrollHorz"
-			 data-cycle-timeout="0"
-			 data-cycle-slides="> div"
-			 data-cycle-prev=".prev-reply"
-			 data-cycle-next=".next-reply">
+		<div  class="cycle-slideshow"
+		data-cycle-fx="scrollHorz"
+		data-cycle-timeout="7000"
+		data-cycle-slides=">div"
+		data-cycle-prev=".prev-reply"
+		data-cycle-next=".next-reply">
+			<div class="ba-grid">
+				<div class="ba-width-medium-1-3 ba-width-small-1-1 reply">
+					<blockquote>
+						<div class="sub-caption customer-name">Paul Moreno</div>
+						<p>Quisque nulla. Vestibulum libero nisl, a vel, scelerisque eget, malesuada at, neque. Vivamus
+							eget
+							nibh. Etiam cursleo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis
+							i
+							faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin.</p>
+
+						<div class="ba-border-circle photo-1"><img src="img/photo1.png" alt=""/></div>
+
+					</blockquote>
+				</div>
+				<div class="ba-width-medium-1-3 ba-width-small-1-1 reply">
+					<blockquote>
+						<div class="sub-caption customer-name">Sara Golden</div>
+						<p>Quisque nulla. Vestibulum libero nisl, a vel, scelerisque eget, malesuada at, neque. Vivamus
+							eget
+							nibh. Etiam cursleo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis
+							i
+							faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin.</p>
+
+						<div class="ba-border-circle photo-2"><img src="img/photo2.png" alt=""/></div>
+
+					</blockquote>
+				</div>
+				<div class="ba-width-medium-1-3 ba-width-small-1-1 reply">
+					<blockquote>
+						<div class="sub-caption customer-name">Robert Smith</div>
+						<p>Quisque nulla. Vestibulum libero nisl, a vel, scelerisque eget, malesuada at, neque. Vivamus
+							eget
+							nibh. Etiam cursleo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis
+							i
+							faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin.</p>
+
+						<div class="ba-border-circle photo-3"><img src="img/photo3.png" alt=""/></div>
+					</blockquote>
+				</div>
+			</div>
 			<div class="ba-grid">
 				<div class="ba-width-medium-1-3 ba-width-small-1-1 reply">
 					<blockquote>
@@ -298,7 +339,7 @@
 					 data-cycle-timeout="5000"
 					 data-cycle-slides="> div"
 					 data-cycle-pager=".portfolio-controls">
-					<div class="ba-grid">
+					<div class="port-100p ba-grid">
 						<div class="ba-width-1-3">
 							<a class="work" href="#"><img src="img/sink.jpg" alt="sink"/></a>
 							<a class="work" href="#"><img src="img/stones.jpg" alt="stones"/></a>
@@ -312,7 +353,7 @@
 							<a class="work" href="#"><img src="img/square-bricks.jpg" alt="square-bricks"/></a>
 						</div>
 					</div>
-					<div class="ba-grid">
+					<div class="port-100p ba-grid">
 
 						<div class="ba-width-1-3">
 							<a class="work" href="#"><img src="img/bathroom.jpg" alt="bathroom"/></a>
@@ -472,9 +513,9 @@
 </section>
 <section class="service">
 	<div class="container cf">
-		<h3 class="medium-label ba-vertical-align-middle">Cities we service</h3>
+		<h3 class="medium-label">Cities we service</h3>
 
-		<p class="phone ba-vertical-align-middle">call now +1 959 603 6035</p>
+		<p class="phone">call now +1 959 603 6035</p>
 	</div>
 </section>
 <section id="contacts" class="contact-us">
@@ -507,5 +548,6 @@
 <section class="map">
 	<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zwVc-MfqXC48.kYYk6PxYquec"	height="500"></iframe>
 </section>
+<span class="back-to-top"><i class="fa fa-arrow-circle-up"></i></span>
 </body>
 </html>
