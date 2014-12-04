@@ -533,6 +533,9 @@ a.title:hover{
 	margin-top: 15px;
 	display: block;
 }
+.small-more:hover{
+	text-decoration: underline;
+}
 .news article+article{
 	margin-top: 50px;
 }
