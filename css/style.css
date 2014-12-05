@@ -615,7 +615,7 @@ a.title:hover{
 
 }
 input:checked+.spoiler>.spoiler-content{
-	max-height: 500px;
+	/*max-height: 500px;*/
 }
 input:checked + .spoiler *{
 	color: #03a9f4;

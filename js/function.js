@@ -51,4 +51,23 @@ jQuery(function($){
             return false;
         });
     });
+//    $('.progress-bars input').change(function(){
+//        var spoilerHeight = $('+.spoiler>.spoiler-content>.spoiler-body',this).outerHeight();
+//        var c = this.checked ? spoilerHeight : 0;
+////        alert(c);
+//        $('.spoiler-content').css('max-height', c);
+//    });
+    $(document).ready(function() {
+        if ($('.progress-bars input').is(':checked') == true){
+            var spoilerHeight = $('input:checked+.spoiler>.spoiler-content>.spoiler-body').outerHeight();
+            $('input:checked+.spoiler>.spoiler-content').css('max-height', spoilerHeight);
+        }
+    });
+    $('.progress-bars input').change(function(){
+        if ($('.progress-bars input').is(':checked') == true){
+            var spoilerHeight = $('input:checked+.spoiler>.spoiler-content>.spoiler-body').outerHeight();
+            $('input:checked+.spoiler>.spoiler-content').css('max-height', spoilerHeight);
+            $('.spoiler-content:not(input:checked+.spoiler>.spoiler-content)').css('max-height', '0');
+        }
+    });
 });
